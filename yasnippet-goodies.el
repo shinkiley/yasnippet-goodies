@@ -43,7 +43,7 @@
     "Create new snippet.
 If MODE provided add snippet to mode's dir.
 Otherwise, add snippet to dir of `major-mode'."
-    (interactive)
+    (interactive "sSnippet name: ")
     (let ((snippets-dir (completion-wrapper-complete yas-snippet-dirs)))
       ($@- check-dir-exists snippets-dir)
 
